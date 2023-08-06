@@ -1,0 +1,88 @@
+/* Login Container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+    /* Set background color for the whole page */
+}
+
+.login-option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    text-align: center;/* Login Container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+    /* Set background color for the whole page */
+}
+
+.login-option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    text-align: center;
+    padding-top: 20px;
+    /* Add padding to create space between line and content */
+}
+
+/* User Login Option */
+.login-option .user-content,
+.login-option .orphanage-content {
+    flex: 1;
+    /* Set both cards to take equal space */
+    padding: 20px;
+    background-color: #fefcfb;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    min-width: 50%;
+    /* Add margin to create space between user and orphanage login */
+}
+
+/* Update button styles */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+/* Style the "Login" button with blue color */
+button.login-button {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Style the "Sign Up" button with green color */
+button.signup-button {
+    background-color: #28a745;
+    color: #fff;
+}
+
+/* Media query for large devices */
+@media (min-width: 992px) {
+    .login-container {
+        flex-direction: row;
+        /* Set the direction to row for large devices */
+    }
+}
+
+@media (max-width: 768px) {
+    .login-container {
+        flex-direction: column;
+    }
+
+    .login-option {
+        margin: 10px;
+    }
+}

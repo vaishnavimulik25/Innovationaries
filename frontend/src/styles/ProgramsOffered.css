@@ -1,0 +1,135 @@
+/* Programs Section */
+.programs {
+    min-height: 100vh;
+    height: 100%;
+    background-color: #fefcfb;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center the content horizontally */
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    /* Add margin to create space between title and cards */
+}
+
+.card {
+    flex-basis: calc(33.33% - 2rem);
+    /* Adjust flex-basis to add space around cards */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    transition: transform 0.3s;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s;
+}/* Programs Section */
+.programs {
+    min-height: 100vh;
+    height: 100%;
+    background-color: #fefcfb;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center the content horizontally */
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    /* Add margin to create space between title and cards */
+}
+
+.card {
+    flex-basis: calc(33.33% - 2rem);
+    /* Adjust flex-basis to add space around cards */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    transition: transform 0.3s;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s;
+}
+
+.card:hover .card-title {
+    color: #034078;
+}
+
+.card-text {
+    font-size: 1.2rem;
+    transition: opacity 0.3s;
+}
+
+.card:hover .card-text {
+    opacity: 0.8;
+}
+
+/* Media query for medium devices */
+@media (max-width: 768px) {
+    .row {
+        justify-content: center;
+    }
+}
+
+/* Media query for small devices */
+@media (max-width: 576px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+    }
+}

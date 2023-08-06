@@ -1,0 +1,599 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* Navbar styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    z-index: 999;
+}
+
+.navbar__left {
+    display: flex;
+    align-items: center;
+}
+
+
+.navbar__logo {
+    width: 66px;
+    /* Set the width and height of your logo */
+    height: 66px;
+    margin-right: 10px;
+}
+
+
+.navbar__title {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Rouge Script', 'Lobster', cursive;
+}
+.navbar__hamburger{
+    border: #ccc;
+    background-color: #050505;
+    padding: 10px;
+}
+.navbar__mobile {
+    display: none;
+    /* Hide the mobile navigation on larger screens */
+}
+
+.navbar__links {
+    display: flex;
+    margin-right: 35px;
+}
+
+.navbar__links ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar__links li {
+    margin-right: 1rem;
+}
+
+.navbar__links li:last-child {
+    margin-right: 0;
+}
+
+.navbar__links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Mobile navigation styles */
+@media (max-width: 768px) {
+    .navbar__left {
+        flex: 1;
+    }
+
+    .navbar__mobile {
+        display: block;
+        /* Show the mobile navigation on smaller screens */
+    }
+
+    .navbar__links {
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        /* Position the mo/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* Navbar styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    z-index: 999;
+}
+
+.navbar__left {
+    display: flex;
+    align-items: center;
+}
+
+
+.navbar__logo {
+    width: 66px;
+    /* Set the width and height of your logo */
+    height: 66px;
+    margin-right: 10px;
+}
+
+
+.navbar__title {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Rouge Script', 'Lobster', cursive;
+}
+.navbar__hamburger{
+    border: #ccc;
+    background-color: #050505;
+    padding: 10px;
+}
+.navbar__mobile {
+    display: none;
+    /* Hide the mobile navigation on larger screens */
+}
+
+.navbar__links {
+    display: flex;
+    margin-right: 35px;
+}
+
+.navbar__links ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar__links li {
+    margin-right: 1rem;
+}
+
+.navbar__links li:last-child {
+    margin-right: 0;
+}
+
+.navbar__links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Mobile navigation styles */
+@media (max-width: 768px) {
+    .navbar__left {
+        flex: 1;
+    }
+
+    .navbar__mobile {
+        display: block;
+        /* Show the mobile navigation on smaller screens */
+    }
+
+    .navbar__links {
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        /* Position the mobile links below the navbar */
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        transition: max-height 0.3s ease;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .navbar__links.open {
+        /* Show the mobile links when open class is applied */
+        max-height: 200px;
+        /* Set the maximum height for the mobile links */
+    }
+
+    .navbar__links ul {
+        flex-direction: column;
+    }
+
+    .navbar__links li {
+        margin: 0.5rem;
+    }
+}
+
+.hero {
+    background-image: url('../images/background.jpeg');
+
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+/*about us styles */
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color :#034078;
+    color: #f0f0f0;
+    height: 100vh;
+    padding: 2rem;
+}
+
+.about .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about .content h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about .content p {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.about .image {
+    flex: 1;
+    text-align: center;
+    padding-left: 2rem;
+    /* Add some padding to separate content and image */
+}
+
+.about .image img {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+/* Apply zoom-in animation on hover */
+.about .image img:hover {
+    transform: scale(1.1);
+}
+
+/* Apply fade-in animation on text content */
+.about .content {
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* programsOffered.css */
+
+
+
+/* ContactUs styles */
+.contact__container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fefcfb;
+    align-items: center;
+    padding: 2rem;
+}
+
+.contact__content {
+    flex: 1;
+    padding-right: 2rem;
+}
+
+.contact__content h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact__content p {
+    font-size: 1.2rem;
+}
+
+.contact__form {
+    flex: 1;
+}
+
+.contact__form form {
+    background-color: #f0f0f0;
+    padding: 1.5rem;
+    border-radius: 5px;
+}
+
+.contact__form h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact__form label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact__form input,
+.contact__form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact__form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.contact__form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Media query for medium and small devices */
+@media (max-width: 768px) {
+    .contact__container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact__content {
+        padding-right: 0;
+        margin-bottom: 2rem;
+        text-align: center;
+        
+    }
+    .faq__section{
+        display: none;
+    }
+    .contact__title {
+        display: block;
+    }
+
+    .contact__form {
+        width: 100%;
+    }
+}
+
+
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Make the page scrollable */
+html,
+body {
+    height: 100%;
+    overflow-y: auto;
+    /* Enable vertical scrollbar when content overflows */
+}
+
+/* Rest of your styles */
+
+/* Homepage styles */
+.homepage {
+    min-height: 100%;
+    /* Ensure the homepage takes up at least 100% of the viewport height */
+    padding-bottom: 20px;
+    /* Add some padding at the bottom to avoid content getting hidden behind the footer */
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+.navbar__left {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.navbar__links ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar__links li {
+    margin-right: 1rem;
+}
+
+.navbar__links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hamburger icon styles */
+.navbar__mobile {
+    display: none;
+    /* Hide mobile navigation by default on larger screens */
+}
+
+.navbar__hamburger {
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+
+.navbar__bar {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+}
+
+/* Styles for mobile navigation when the hamburger icon is clicked */
+.navbar__links.open {
+    display: block;
+}
+
+@media (max-width: 768px) {
+
+    /* Show mobile navigation for screens up to 768px wide */
+    .navbar__links {
+        display: none;
+        /* Hide desktop navigation on mobile */
+    }
+
+    .navbar__mobile {
+        display: block;
+        /* Show mobile navigation */
+    }
+}
+
+
+
+
+/* Update button styles */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+/* Style the "Login" button with blue color */
+button.login-button {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Style the "Sign Up" button with green color */
+button.signup-button {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.members-login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin: auto;
+    max-width: 600px;
+}
+
+.members-login-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.members-login-form {
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    padding: 2rem;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.members-login-form h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.input-container label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.input-container input {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style the "Login" button with blue color */
+button.login-button {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Style the "Sign Up" button with green color */
+button.signup-button {
+    background-color: #28a745;
+    color: #fff;
+}
+
+/* Style the "Cancel" button with gray color */
+button.cancel-button {
+    background-color: #ccc;
+    color: #fff;
+}

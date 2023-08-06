@@ -1,0 +1,69 @@
+.orphanages-container {
+    padding: 20px;
+    background-color: #034078;
+    min-height: 100vh;
+    height: 100%;
+}
+
+.orphanages-header {
+    text-align: cen.orphanages-container {
+    padding: 20px;
+    background-color: #034078;
+    min-height: 100vh;
+    height: 100%;
+}
+
+.orphanages-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filter-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #fefcfb;
+}
+
+.orphanage-card {
+    border: 1px solid #034078;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fefcfb;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.orphanage-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.orphanage-card h3 {
+    margin-bottom: 5px;
+}
+
+.orphanage-card p {
+    margin-bottom: 5px;
+}
+
+/* NoticesSection.css */
+.notices-section {
+    background-color: #e0f1af;
+    padding: 1rem;
+    flex: 1;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.notices-section h3 {
+    margin-bottom: 1rem;
+}
+
+.notices-item {
+    margin-bottom: 1rem;
+}
