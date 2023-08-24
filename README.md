@@ -1,4 +1,4 @@
-# Innovationaries
+# Innovisionaries
 # Introduction
 Harmony Hands is a web application that empowers users to explore various orphanages and understand their specific needs. Users can view detailed information about these orphanages, including their location, type, and contact details. Moreover, they can extend their support by donating resources or volunteering their time. Together, we can create a community of caring hearts! 💓
 
